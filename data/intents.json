@@ -2,89 +2,72 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey there", "Is anyone there?", "Good day", "Good morning", "Heya", "Hi bot"],
-      "responses": [
-        "Hello! I'm here to listen. How are you feeling today?",
-        "Hi there. How can I help you navigate your thoughts today?",
-        "Greetings! Welcome to a safe space. What's on your mind?"
-      ]
+      "patterns": ["Hi", "Hello", "Hey there", "Is anyone there?", "Good day", "Good morning", "Anyone online?", "Hello assistant"],
+      "responses": ["Hello! I am MindEase, your AI space for mental wellness reflection. How are you holding up today?"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Talk to you later", "Exit"],
-      "responses": [
-        "Goodbye. Take care of yourself, and remember I'm always here if you need to chat.",
-        "Bye for now. Wishing you a peaceful rest of your day.",
-        "Take care. Be kind to yourself today."
-      ]
+      "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Talk to you later", "Exit", "Quit"],
+      "responses": ["Goodbye. Please remember to be gentle with yourself. I am always here if you need to pause and reflect."]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That helps", "Awesome", "Thank you for listening", "Appreciate it"],
-      "responses": [
-        "You are very welcome! I'm glad I could offer some comfort.",
-        "Anytime. Your mental wellness matters.",
-        "I'm glad to be here for you. Take it one step at a time."
-      ]
-    },
-    {
-      "tag": "anxiety",
+      "tag": "anxiety_somatic",
       "patterns": [
-        "I feel anxious", "I am having a panic attack", "My heart is racing", "I feel overwhelmed", 
-        "I'm so stressed", "I can't breathe easily", "I feel like something bad is going to happen",
-        "My mind is spinning with worry", "I am panicking", "I feel incredibly tense"
+        "My heart is racing and I can't breathe", "I feel a tight chest sensation", "I am shaking and sweating", 
+        "Having a sudden panic attack", "I feel physically hyperventilating", "My hands are trembling", "I feel dizzy and anxious"
       ],
       "responses": [
-        "I'm sorry you're feeling this way. Take a deep breath. Let's try a quick grounding exercise: name 3 things you can see and 2 things you can feel right now.",
-        "Feeling overwhelmed is incredibly challenging. Try to release the tension in your shoulders and take a slow, deep breath. I am right here with you.",
-        "Anxiety can make your mind race. Focus on the physical sensation of your feet on the floor. You are safe in this current moment."
+        "It sounds like your body's fight-or-flight response is highly active right now. Let's ground ourselves: lower your shoulders, unclench your jaw, and lengthen your next exhale. You are safe in this physical space."
       ]
     },
     {
-      "tag": "depression",
+      "tag": "anxiety_cognitive",
       "patterns": [
-        "I feel so sad", "I have been crying all day", "I feel completely empty inside", 
-        "I don't have energy to do anything", "Everything feels hopeless", "I feel isolated",
-        "I am so lonely", "Nobody cares about me", "I feel miserable and down"
+        "My mind won't stop racing with worry", "I am overthinking everything", "I am terrified of the future", 
+        "Constantly expecting the worst outcome", "I feel an overwhelming sense of dread", "I'm trapped in a worry loop"
       ],
       "responses": [
-        "I hear you, and I am so sorry you are carrying such heavy feelings right now. It is okay to not be okay.",
-        "When everything feels empty, even getting through the hour is an achievement. Please be gentle with yourself.",
-        "You are not alone, even when your mind tells you otherwise. Thank you for opening up to me about this heavy feeling."
+        "Anxiety tends to pull our minds into future scenarios we cannot control. Let's try to gently bring your focus back to the present. What is one concrete thing you can see right in front of you?"
       ]
     },
     {
-      "tag": "sleep_issues",
+      "tag": "depression_emotional",
       "patterns": [
-        "I can't sleep", "I have insomnia", "My thoughts keep me awake at night", 
-        "I am tired but my mind won't shut off", "I woke up in the middle of the night", "I have terrible sleep patterns"
+        "I feel completely empty inside", "I have been crying all day for no reason", "Everything feels totally hopeless", 
+        "I am so lonely and isolated", "I feel miserable and deeply down", "I feel completely numb"
       ],
       "responses": [
-        "Restless nights can be very frustrating. Try turning off your screens and listening to a calm, steady sound or focusing entirely on your breathing.",
-        "If your mind is racing, try writing down everything you're worrying about on a piece of physical paper to get it out of your head for the night.",
-        "Don't pressure yourself to force sleep. Just focus on letting your body rest comfortably in the dark."
+        "Feeling empty or completely numb is an incredibly heavy weight to carry. Please know that you do not have to force positivity right now. Just getting through today is a profound victory."
       ]
     },
     {
-      "tag": "self_esteem",
+      "tag": "depression_behavioral",
       "patterns": [
-        "I feel like a failure", "I am not good enough", "I hate myself", 
-        "I ruin everything", "I am worthless", "I don't fit in anywhere", "I feel insecure"
+        "I don't have the energy to get out of bed", "I stopped caring about my hobbies", "I've been isolating myself from friends", 
+        "I can't concentrate on my classes", "I have zero motivation to do anything anymore"
       ],
       "responses": [
-        "Please remember that your thoughts are not always facts. You are human, and you are inherently worthy of kindness—especially from yourself.",
-        "It sounds like you're being incredibly hard on yourself right now. Mistake or setback, it doesn't define your absolute value as a person.",
-        "You carry unique value even when it's hard for you to see it right now. I value you being here sharing this with me."
+        "When depression saps your energy, even minor tasks can feel like climbing a mountain. Give yourself permission to do things poorly or slowly today. Taking care of yourself comes first."
+      ]
+    },
+    {
+      "tag": "academic_burnout",
+      "patterns": [
+        "I am completely exhausted by university assignments", "I am burning out from exams", "The academic pressure is too much", 
+        "I feel like a failure because of my grades", "I am physically and mentally drained from studying", "Too much course stress"
+      ],
+      "responses": [
+        "Academic burnout is completely valid, especially when balancing intensive course loads. Your fundamental worth is not tied to your GPA or productivity. Can you give yourself permission to step away from your desk for 15 minutes?"
       ]
     },
     {
       "tag": "crisis",
       "patterns": [
         "I want to hurt myself", "I don't want to live anymore", "Suicide", "I want to end my life", 
-        "I am planning to end it", "I wish I was dead", "Cutting myself", "Self harm"
+        "I am planning to end it", "I wish I was dead", "Cutting myself", "Self harm", "I want to kill myself"
       ],
       "responses": [
-        "CRITICAL_OVERRIDE: Please know that you are not alone and there is support available right now. Please reach out to a professional or a helpline immediately. You can call or text 988 (The Suicide & Crisis Lifeline) for free, confidential, 24/7 support. Please stay safe."
+        "CRITICAL_OVERRIDE: Please know that you are not alone and there is support available right now. Please reach out to a professional or a helpline immediately. You can call or text 988 (The Suicide & Crisis Lifeline) for free, confidential, 24/7 support. Your life matters. Please connect with them."
       ]
     }
   ]

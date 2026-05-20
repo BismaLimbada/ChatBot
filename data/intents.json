@@ -11,6 +11,14 @@
       "responses": ["Goodbye. Please remember to be gentle with yourself. I am always here if you need to pause and reflect."]
     },
     {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That helps", "Awesome", "Thank you for listening", "Appreciate it", "You've been helpful"],
+      "responses": [
+        "You're very welcome. Taking time to process your feelings is a powerful step.",
+        "I'm glad to be here for you. Your mental wellness matters deeply."
+      ]
+    },
+    {
       "tag": "anxiety_somatic",
       "patterns": [
         "My heart is racing and I can't breathe", "I feel a tight chest sensation", "I am shaking and sweating", 
@@ -33,11 +41,11 @@
     {
       "tag": "depression_emotional",
       "patterns": [
-        "I feel completely empty inside", "I have been crying all day for no reason", "Everything feels totally hopeless", 
-        "I am so lonely and isolated", "I feel miserable and deeply down", "I feel completely numb"
+        "I feel so sad", "I have been crying all day for no reason", "Everything feels totally hopeless", 
+        "I am so lonely and isolated", "I feel miserable and deeply down", "I feel completely empty inside", "I feel completely numb"
       ],
       "responses": [
-        "Feeling empty or completely numb is an incredibly heavy weight to carry. Please know that you do not have to force positivity right now. Just getting through today is a profound victory."
+        "I'm so sorry you are feeling this heavy weight. Depression can steal your energy and distort your perspective. Please know that surviving today, even if it's just breathing through it, is enough."
       ]
     },
     {
@@ -51,10 +59,23 @@
       ]
     },
     {
+      "tag": "sleep_issues",
+      "patterns": [
+        "I can't sleep", "I have insomnia", "My thoughts keep me awake at night", 
+        "I am tired but my mind won't shut off", "I woke up in the middle of the night", "I have terrible sleep patterns",
+        "I've been tossing and turning for hours", "My sleep schedule is completely ruined"
+      ],
+      "responses": [
+        "Restless nights are challenging. If you've been in bed for more than 20 minutes without sleeping, try getting up, moving to a dimly lit room, and doing a quiet activity until you feel tired.",
+        "When racing thoughts keep you awake, try a 'brain dump': grab a piece of paper and write down everything you are worrying about to signal to your brain that it's safe to rest."
+      ]
+    },
+    {
       "tag": "academic_burnout",
       "patterns": [
         "I am completely exhausted by university assignments", "I am burning out from exams", "The academic pressure is too much", 
-        "I feel like a failure because of my grades", "I am physically and mentally drained from studying", "Too much course stress"
+        "I feel like a failure because of my grades", "I am physically and mentally drained from studying", "Too much course stress",
+        "I feel stressed", "I'm so stressed out", "I feel highly stressed about everything"
       ],
       "responses": [
         "Academic burnout is completely valid, especially when balancing intensive course loads. Your fundamental worth is not tied to your GPA or productivity. Can you give yourself permission to step away from your desk for 15 minutes?"

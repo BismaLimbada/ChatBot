@@ -2,18 +2,90 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey there", "Is anyone there?", "Good day"],
-      "responses": ["Hello! I'm here to listen. How are you feeling today?", "Hi there. How can I help you navigate your thoughts today?"]
+      "patterns": ["Hi", "Hello", "Hey there", "Is anyone there?", "Good day", "Good morning", "Heya", "Hi bot"],
+      "responses": [
+        "Hello! I'm here to listen. How are you feeling today?",
+        "Hi there. How can I help you navigate your thoughts today?",
+        "Greetings! Welcome to a safe space. What's on your mind?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Talk to you later", "Exit"],
+      "responses": [
+        "Goodbye. Take care of yourself, and remember I'm always here if you need to chat.",
+        "Bye for now. Wishing you a peaceful rest of your day.",
+        "Take care. Be kind to yourself today."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That helps", "Awesome", "Thank you for listening", "Appreciate it"],
+      "responses": [
+        "You are very welcome! I'm glad I could offer some comfort.",
+        "Anytime. Your mental wellness matters.",
+        "I'm glad to be here for you. Take it one step at a time."
+      ]
     },
     {
       "tag": "anxiety",
-      "patterns": ["I feel anxious", "I am having a panic attack", "My heart is racing", "I feel overwhelmed", "I'm so stressed"],
-      "responses": ["I'm sorry you're feeling this way. Take a deep breath. Let's try a quick grounding exercise: name 3 things you can see right now.", "Feeling overwhelmed is really tough. Remember to take it one moment at a time. I'm here for you."]
+      "patterns": [
+        "I feel anxious", "I am having a panic attack", "My heart is racing", "I feel overwhelmed", 
+        "I'm so stressed", "I can't breathe easily", "I feel like something bad is going to happen",
+        "My mind is spinning with worry", "I am panicking", "I feel incredibly tense"
+      ],
+      "responses": [
+        "I'm sorry you're feeling this way. Take a deep breath. Let's try a quick grounding exercise: name 3 things you can see and 2 things you can feel right now.",
+        "Feeling overwhelmed is incredibly challenging. Try to release the tension in your shoulders and take a slow, deep breath. I am right here with you.",
+        "Anxiety can make your mind race. Focus on the physical sensation of your feet on the floor. You are safe in this current moment."
+      ]
+    },
+    {
+      "tag": "depression",
+      "patterns": [
+        "I feel so sad", "I have been crying all day", "I feel completely empty inside", 
+        "I don't have energy to do anything", "Everything feels hopeless", "I feel isolated",
+        "I am so lonely", "Nobody cares about me", "I feel miserable and down"
+      ],
+      "responses": [
+        "I hear you, and I am so sorry you are carrying such heavy feelings right now. It is okay to not be okay.",
+        "When everything feels empty, even getting through the hour is an achievement. Please be gentle with yourself.",
+        "You are not alone, even when your mind tells you otherwise. Thank you for opening up to me about this heavy feeling."
+      ]
+    },
+    {
+      "tag": "sleep_issues",
+      "patterns": [
+        "I can't sleep", "I have insomnia", "My thoughts keep me awake at night", 
+        "I am tired but my mind won't shut off", "I woke up in the middle of the night", "I have terrible sleep patterns"
+      ],
+      "responses": [
+        "Restless nights can be very frustrating. Try turning off your screens and listening to a calm, steady sound or focusing entirely on your breathing.",
+        "If your mind is racing, try writing down everything you're worrying about on a piece of physical paper to get it out of your head for the night.",
+        "Don't pressure yourself to force sleep. Just focus on letting your body rest comfortably in the dark."
+      ]
+    },
+    {
+      "tag": "self_esteem",
+      "patterns": [
+        "I feel like a failure", "I am not good enough", "I hate myself", 
+        "I ruin everything", "I am worthless", "I don't fit in anywhere", "I feel insecure"
+      ],
+      "responses": [
+        "Please remember that your thoughts are not always facts. You are human, and you are inherently worthy of kindness—especially from yourself.",
+        "It sounds like you're being incredibly hard on yourself right now. Mistake or setback, it doesn't define your absolute value as a person.",
+        "You carry unique value even when it's hard for you to see it right now. I value you being here sharing this with me."
+      ]
     },
     {
       "tag": "crisis",
-      "patterns": ["I want to hurt myself", "I don't want to live anymore", "Suicide", "I want to end it"],
-      "responses": ["CRITICAL_OVERRIDE: Please know you are not alone. Reach out to a professional or a helpline immediately. You can call or text 988 (Suicide & Crisis Lifeline) for free, 24/7 confidential support."]
+      "patterns": [
+        "I want to hurt myself", "I don't want to live anymore", "Suicide", "I want to end my life", 
+        "I am planning to end it", "I wish I was dead", "Cutting myself", "Self harm"
+      ],
+      "responses": [
+        "CRITICAL_OVERRIDE: Please know that you are not alone and there is support available right now. Please reach out to a professional or a helpline immediately. You can call or text 988 (The Suicide & Crisis Lifeline) for free, confidential, 24/7 support. Please stay safe."
+      ]
     }
   ]
 }

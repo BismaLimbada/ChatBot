@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey there", "Is anyone there?", "Good day"],
+      "responses": ["Hello! I'm here to listen. How are you feeling today?", "Hi there. How can I help you navigate your thoughts today?"]
+    },
+    {
+      "tag": "anxiety",
+      "patterns": ["I feel anxious", "I am having a panic attack", "My heart is racing", "I feel overwhelmed", "I'm so stressed"],
+      "responses": ["I'm sorry you're feeling this way. Take a deep breath. Let's try a quick grounding exercise: name 3 things you can see right now.", "Feeling overwhelmed is really tough. Remember to take it one moment at a time. I'm here for you."]
+    },
+    {
+      "tag": "crisis",
+      "patterns": ["I want to hurt myself", "I don't want to live anymore", "Suicide", "I want to end it"],
+      "responses": ["CRITICAL_OVERRIDE: Please know you are not alone. Reach out to a professional or a helpline immediately. You can call or text 988 (Suicide & Crisis Lifeline) for free, 24/7 confidential support."]
+    }
+  ]
+}

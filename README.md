@@ -2,6 +2,14 @@
 
 Neura AI is an empathetic, context-aware chatbot framework built to support mental health awareness. Powered by a Model-Based Reflex Agent architecture implemented via TensorFlow, NLTK, and Streamlit, the system actively monitors and logs conversational state dynamics, tracked emotional progressions, and strict context-driven verification loops over multi-turn exchanges.
 
+> **Status:** 🚀 Live Deployment Active
+
+An empathetic, context-aware Model-Based Reflex Agent framework designed for mental health awareness, emotional scaling, and supportive dialogue.
+
+### 🔗 Quick Links
+* **Live Web Application:** [neuraai.streamlit.app](https://neuraai.streamlit.app/)
+* **Development Repository:** [GitHub Root](https://github.com/BismaLimbada/ChatBot)
+
 ---
 
 ## 🚀 Key Features

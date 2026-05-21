@@ -6,8 +6,6 @@
         "Hi",
         "Hello",
         "Hey",
-        "Aoa",
-        "Asalamualaikum",
         "Anyone there?",
         "Good morning",
         "Good evening",
@@ -16,10 +14,23 @@
       ],
       "responses": [
         "Hello. I'm here to listen without judging you. What's been on your mind lately?",
-        "Hi. I'm glad you reached out today. How have things been feeling for you recently?",
-        "Walaikum Assalam. You can talk freely here. What's been bothering you?"
+        "Hi. I'm glad you reached out today. How have things been feeling for you recently?"
       ]
     },
+    {
+      "tag": "islamic_greeting",
+      "patterns": [
+        "Aoa",
+        "Asalamualaikum",
+        "Assalam o alaikum"
+      ],
+      "responses": [
+        "Walaikum Assalam. You can talk freely here. What's been bothering you?",
+        "Walaikum Assalam. I'm glad you reached out today. How have things been feeling for you?"
+      ]
+    },
+
+
 
     {
       "tag": "goodbye",

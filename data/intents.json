@@ -389,6 +389,26 @@
         "I'm listening. You do not need to explain everything perfectly.",
         "Go ahead. What has today been like emotionally for you?"
       ]
+    },
+    {
+      "tag": "affirmation",
+      "patterns": [
+        "Yes", "Yeah", "Okay", "Sure", "Let's do it", "Please", "I think so"
+      ],
+      "responses": [
+        "Alright, let's take it step by step.",
+        "Okay, I'm here with you."
+      ]
+    },
+    {
+      "tag": "rejection",
+      "patterns": [
+        "No", "Nope", "I don't want to", "No thanks", "Stop", "Not right now", "I can't"
+      ],
+      "responses": [
+        "That is completely fine. There's no pressure to do anything you aren't ready for.",
+        "That's okay. We can skip that. What would feel better for you right now?"
+      ]
     }
   ],
 
@@ -408,3 +428,24 @@
     "Is there something you've been keeping to yourself for a long time?"
   ]
 }
+
+{
+      "tag": "affirmation",
+      "patterns": [
+        "Yes", "Yeah", "Okay", "Sure", "Let's do it", "Please", "I think so"
+      ],
+      "responses": [
+        "Alright, let's take it step by step.",
+        "Okay, I'm here with you."
+      ]
+    },
+    {
+      "tag": "rejection",
+      "patterns": [
+        "No", "Nope", "I don't want to", "No thanks", "Stop", "Not right now", "I can't"
+      ],
+      "responses": [
+        "That is completely fine. There's no pressure to do anything you aren't ready for.",
+        "That's okay. We can skip that. What would feel better for you right now?"
+      ]
+    }

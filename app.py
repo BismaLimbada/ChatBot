@@ -143,8 +143,10 @@ st.markdown("""
 # 2. Optimized Resource Loading (ERROR RESOLUTION LINE)
 @st.cache_resource
 def load_bot_resources():
-    # Explicit relative dot path resolves the container ValueError on Streamlit Cloud
-    model = tf.keras.models.load_model('./mental_health_model.keras', compile=False)
+    model = tf.keras.models.load_model(
+        "mental_health_model.keras",
+        compile=False
+    )
 
     with open("data_mappings.json", "r") as f:
         mappings = json.load(f)
@@ -153,24 +155,9 @@ def load_bot_resources():
         intents = json.load(f)
 
     return model, mappings["all_words"], mappings["tags"], intents
-
 
 model, all_words, tags, intents = load_bot_resources()
 
-# 2. Optimized Resource Loading
-@st.cache_resource
-def load_bot_resources():
-    # Load via legacy string parsing to match different Keras versions
-    model = tf.keras.models.load_model('mental_health_model.keras', compile=False, safe_mode=False)
-
-    with open("data_mappings.json", "r") as f:
-        mappings = json.load(f)
-
-    with open("data/intents.json", "r") as f:
-        intents = json.load(f)
-
-    return model, mappings["all_words"], mappings["tags"], intents
-    
 # --- MODEL-BASED REFLEX AGENT: STATE ARCHITECTURE SETUP ---
 if "agent_internal_state" not in st.session_state:
     st.session_state.agent_internal_state = {
@@ -419,7 +406,7 @@ if user_input := st.chat_input("Type something here..."):
             if predicted_tag == "goodbye" and not is_explicit_farewell:
                 confidence = 0.10
 
-            if confidence < 0.70:
+            if confidence < 0.50:
                 reply = random.choice([
                     "I'm not sure I understand that. Could you tell me a little more about what's on your mind?",
                     "I want to make sure I understand you properly, but I didn't quite catch that. What's been going on?",
